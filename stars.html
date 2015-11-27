@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="bootstrap/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/cerulean.min.css" rel="stylesheet" />
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed btn-default" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class='glyphicon glyphicon-chevron-down'></span>
+                </button>
+                <!--<a class="navbar-brand" href="#">Tetris</a>-->
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="tetris.html">Tetris <span class="sr-only">(current)</span></a></liclass="active">
+                    <li class="active"><a href="stars.html">9 Stars</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">About</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </nav>
+
+    <div id="content">
+        <header class="container lead well">
+            <a href="http://deskach.github.io/nine_stars/" class="btn btn-primary">Play 9 Stars</a>
+        </header>
+        <section class="container">
+            <img src="media/stars.png" class="img-thumbnail pull-right" style="width:300px; margin-left: 1em;" />
+            <section>
+                The game is aimed to help kids learn math.
+                The rules are as following:
+                A random number of stars (from 1 to 9) appears on the screen.
+                One needs to pick up numbers by clicking their pictures.
+                The picked up numbers should sum up to match the number of stars.
+                Each number can be used only once.
+                To win the game all numbers should be used.
+                If it is not possible to create a sum to match the stars one can hit the redraw button, which will
+                regenerate the stars. The redraw button can be used 5 times.
+            </section>
+            <section>
+                I borrowed this game from a pluralsight course about React.js. 
+            </section>
+        </section>
+        <footer></footer>
+    </div>
+
+    <script src="js/lib/jquery-2.1.4.js"></script>
+    <script src="bootstrap/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
