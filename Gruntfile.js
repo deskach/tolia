@@ -27,19 +27,25 @@
       }
     },
 
+    uglify: {
+      my_target: {
+        files: {
+          '../Web/script/tolia-min.js': [
+            'lib/jquery-2.1.4.js',
+            'bootstrap/bootstrap-3.3.6-dist/js/bootstrap.min.js',
+            'script/boundle.js'
+          ]
+        }
+      }
+    },
+
     copy: {
       main: {
         files: [
           {
             expand: true,
-            flatten: true,
-            src: ['bootstrap/*'], dest: '../Web/bootstrap/',
-            filter: 'isFile'
-          },
-          {
-            expand: true,
-            flatten: true,
-            src: ['lib/*'], dest: '../Web/lib/',
+            //flatten: true,
+            src: ['bootstrap/**'], dest: '../Web/',
             filter: 'isFile'
           },
           {
@@ -49,9 +55,7 @@
             filter: 'isFile'
           },
           {
-            expand: true,
-            flatten: true,
-            src: ['script/*'], dest: '../Web/script/',
+            src: ['script/tolia-min.js'], dest: '../Web/script/',
             filter: 'isFile'
           },
           {
@@ -97,8 +101,9 @@
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-browserify');
   grunt.loadNpmTasks('grunt-contrib-handlebars');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Default task(s).
   grunt.registerTask('default', ['handlebars', 'browserify']);
-  grunt.registerTask('build', ['handlebars', 'browserify', 'processhtml', 'copy']);
+  grunt.registerTask('build', ['handlebars', 'browserify', 'uglify', 'processhtml', 'copy']);
 };
