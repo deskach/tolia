@@ -3,12 +3,9 @@
 $(document).ready(function () {
   var Handlebars = require('handlebars');
   var templates = require('./templates')(Handlebars);
+  var $active = $('#menu>ul>li.active').first().children().first();
 
-  var divs = {
-    'tetris.html': templates.tetris(),
-    'stars.html': templates.stars(),
-    'index.html': templates.index()
-  }
+  $('#content').html(templates[$active.attr('id')]());
 
   $('#menu>ul>li>a').click(function (e) {
     var $parent = $(e.target).parent();
@@ -17,7 +14,7 @@ $(document).ready(function () {
     $('#menu>ul>li').removeClass('active');
     $parent.addClass('active');
 
-    var s = divs[$(e.target).attr('href')];
+    var s = templates[e.target.id]();
 
     $('#content').html(s);
   });

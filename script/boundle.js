@@ -4,12 +4,9 @@
 $(document).ready(function () {
   var Handlebars = require('handlebars');
   var templates = require('./templates')(Handlebars);
+  var $active = $('#menu>ul>li.active').first().children().first();
 
-  var divs = {
-    'tetris.html': templates.tetris(),
-    'stars.html': templates.stars(),
-    'index.html': templates.index()
-  }
+  $('#content').html(templates[$active.attr('id')]());
 
   $('#menu>ul>li>a').click(function (e) {
     var $parent = $(e.target).parent();
@@ -18,7 +15,7 @@ $(document).ready(function () {
     $('#menu>ul>li').removeClass('active');
     $parent.addClass('active');
 
-    var s = divs[$(e.target).attr('href')];
+    var s = templates[e.target.id]();
 
     $('#content').html(s);
   });
@@ -33,7 +30,7 @@ Handlebars = glob.Handlebars || require('handlebars');
 
 this["JST"] = this["JST"] || {};
 
-this["JST"]["index"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+this["JST"]["about"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     return "<header class=\"container lead well\">\r\n    About the project\r\n</header>\r\n<section class=\"container\">\r\n    <img src=\"media/IMG_20141227_193206.jpg\" class=\"img-thumbnail pull-right\" style=\"width:300px; margin: 1em;\" />\r\n    <img src=\"media/teagardens.jpg\" class=\"img-thumbnail pull-left\" style=\"width:400px; margin: 1em;\" />\r\n    <section>\r\n        The site contains a few games which I created to play with front-end frameworks.\r\n        All games support responsive design, this means that it should be possible to play them\r\n        on any device type.\r\n    </section>\r\n    <br />\r\n    <section>\r\n        I'd like to devote this 'playground' to dear little Tolia - my son who is always happy having autism.\r\n        And to my beloved wife Daryna.\r\n    </section>\r\n    <br />\r\n    <section class=\"pull-right\">\r\n        Cheers, Dzianis.\r\n    </section>\r\n</section>\r\n<footer></footer>\r\n";
 },"useData":true});
 

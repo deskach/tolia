@@ -104,6 +104,6 @@
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Default task(s).
-  grunt.registerTask('default', ['handlebars', 'browserify']);
+  grunt.registerTask('default', ['browserify']);
   grunt.registerTask('build', ['handlebars', 'browserify', 'uglify', 'processhtml', 'copy']);
 };
