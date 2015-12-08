@@ -3,9 +3,14 @@
 $(document).ready(function () {
   var Handlebars = require('handlebars');
   var templates = require('./templates')(Handlebars);
-  var $active = $('#menu>ul>li.active').first().children().first();
 
-  $('#content').html(templates[$active.attr('id')]());
+  function setActiveContent() {
+    var $active = $('#menu>ul>li.active').first().children().first();
+
+    $('#content').html(templates[$active.attr('href')]());
+  }
+
+  setActiveContent();
 
   $('#menu>ul>li>a').click(function (e) {
     var $parent = $(e.target).parent();
@@ -14,8 +19,6 @@ $(document).ready(function () {
     $('#menu>ul>li').removeClass('active');
     $parent.addClass('active');
 
-    var s = templates[e.target.id]();
-
-    $('#content').html(s);
+    setActiveContent();
   });
 });
