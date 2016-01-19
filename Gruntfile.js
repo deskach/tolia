@@ -35,7 +35,10 @@
             'lib/bootstrap/bootstrap-3.3.6-dist/js/bootstrap.min.js',
             'lib/angular/v1.4.0/angular.js',
             'lib/angular/v1.4.0/angular-route.js',
-            'script/boundle.js'
+            'js/constants.js',
+            'js/app.js',
+            'js/Controllers/menuController.js'
+            //'script/boundle.js'
           ]
         }
       }
@@ -47,7 +50,7 @@
           {
             expand: true,
             //flatten: true,
-            src: ['lib/bootstrap/**'], dest: 'Web/lib/',
+            src: ['lib/bootstrap/**'], dest: 'Web/',
             filter: 'isFile'
           },
           {
@@ -57,13 +60,15 @@
             filter: 'isFile'
           },
           {
-            src: ['script/tolia-min.js'], dest: 'Web/script/',
+            expand: true,
+            flatten: true,
+            src: ['media/*'], dest: 'Web/media/',
             filter: 'isFile'
           },
           {
             expand: true,
-            flatten: true,
-            src: ['media/*'], dest: 'Web/media/',
+            //flatten: true,
+            src: ['templates/*'], dest: 'Web/',
             filter: 'isFile'
           }
         ]
@@ -106,6 +111,6 @@
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Default task(s).
-  grunt.registerTask('default', ['browserify']);
-  grunt.registerTask('build', ['browserify', 'uglify', 'processhtml', 'copy']);
+  grunt.registerTask('default', [/*'browserify'*/]);
+  grunt.registerTask('build', [/*'browserify',*/ 'uglify', 'processhtml', 'copy']);
 };

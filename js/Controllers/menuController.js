@@ -3,8 +3,8 @@
 (function () {
   var toliaApp = angular.module('toliaApp');
 
-  toliaApp.controller('MenuController',
-    function MenuController($scope) {
+  toliaApp.controller('MenuController', ['$scope',
+    function ($scope) {
       $scope.templates = constants.urls;
-    });
+    }]);
 })();
