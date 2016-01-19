@@ -3,6 +3,8 @@ bin/
 obj/
 Properties/
 node_modules/
+Web/
+script/
 .module-cache/
 *.njsproj
 *.csproj
