@@ -13,6 +13,11 @@ var constants = {
       //controller: 'starsController',
       text: '9 Stars'
     }, {
+      url: '/cardmatching',
+      templateUrl: 'templates/cardmatching.html',
+      //controller: 'starsController',
+      text: 'Cardmatching'
+    }, {
       url: '/about',
       templateUrl: 'templates/about.html',
       //controller: 'aboutController',
