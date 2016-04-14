@@ -22,7 +22,7 @@
       },
       dist: {
         files: {
-          'Web/index.html': ['index.html']
+          '../Web/index.html': ['index.html']
         }
       }
     },
@@ -30,7 +30,7 @@
     uglify: {
       my_target: {
         files: {
-          'Web/script/tolia-min.js': [
+          '../Web/script/tolia-min.js': [
             'lib/jquery/jquery-2.1.4.js',
             'lib/bootstrap/bootstrap-3.3.6-dist/js/bootstrap.min.js',
             'lib/angular/v1.4.0/angular.js',
@@ -50,25 +50,25 @@
           {
             expand: true,
             //flatten: true,
-            src: ['lib/bootstrap/**'], dest: 'Web/',
+            src: ['lib/bootstrap/**'], dest: '../Web/',
             filter: 'isFile'
           },
           {
             expand: true,
             flatten: true,
-            src: ['css/*'], dest: 'Web/css/',
+            src: ['css/*'], dest: '../Web/css/',
             filter: 'isFile'
           },
           {
             expand: true,
             flatten: true,
-            src: ['media/*'], dest: 'Web/media/',
+            src: ['media/*'], dest: '../Web/media/',
             filter: 'isFile'
           },
           {
             expand: true,
             //flatten: true,
-            src: ['templates/*'], dest: 'Web/',
+            src: ['templates/*'], dest: '../Web/',
             filter: 'isFile'
           }
         ]
