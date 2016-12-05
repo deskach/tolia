@@ -5,22 +5,22 @@ var constants = {
     {
       url: '/tetris',
       templateUrl: 'templates/tetris.html',
-      //controller: 'tetrisController',
       text: 'Tetris'
     }, {
       url: '/stars',
       templateUrl: 'templates/stars.html',
-      //controller: 'starsController',
       text: '9 Stars'
     }, {
       url: '/cardmatching',
       templateUrl: 'templates/cardmatching.html',
-      //controller: 'starsController',
       text: 'Cardmatching'
+    }, {
+      url: '/match5',
+      templateUrl: 'templates/match5.html',
+      text: 'Match5'
     }, {
       url: '/about',
       templateUrl: 'templates/about.html',
-      //controller: 'aboutController',
       text: 'About'
     }
   ]
