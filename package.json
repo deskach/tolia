@@ -6,6 +6,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod --aot --base-href /tolia --deploy-url https://deskach.github.io/tolia/",
+    "git-directory-deploy": "git-directory-deploy --directory dist/ --branch gh-pages",
+    "deploy": "npm run build && npm run git-directory-deploy",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -36,6 +38,7 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "~3.2.0",
+    "git-directory-deploy": "^1.5.1",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "~1.7.0",
