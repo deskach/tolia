@@ -6,8 +6,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod --aot --base-href=/tolia --deploy-url=tolia/",
-    "git-directory-deploy": "git-directory-deploy --directory dist/ --branch gh-pages",
-    "deploy": "npm run build && npm run git-directory-deploy",
+    "process-assets": "sed -i -e 's/assets\\//tolia\\/assets\\//g' dist/main.*.bundle.js",
+    "push-2-gh-pages": "git-directory-deploy --directory dist/ --branch gh-pages",
+    "deploy": "npm run build && npm run process-assets && npm run push-2-gh-pages",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
