@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod --aot --base-href /tolia --deploy-url https://deskach.github.io/tolia/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -21,7 +21,10 @@
     "@angular/platform-browser": "^4.2.4",
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
+    "bootstrap": "^4.0.0-beta",
     "core-js": "^2.4.1",
+    "jquery": "^3.0.0",
+    "popper.js": "^1.12.5",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
   },
