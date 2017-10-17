@@ -8,8 +8,8 @@ import { ColorLinesComponent } from './content/lines/lines';
 
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/about', pathMatch: 'full' },
-  { path: 'about', component: AboutComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: AboutComponent },
   { path: 'tetris', component: TetrisComponent },
   { path: 'nine-stars', component: NineStarsComponent },
   { path: 'cardmatching', component: CardmatchingComponent },
