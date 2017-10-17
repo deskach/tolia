@@ -4,6 +4,10 @@
   cursor: pointer;
 }
 
+.img-thumbnail {
+  width: 100%;
+}
+
 .row {
   margin-top: 1rem;
 }
