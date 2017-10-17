@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --aot --base-href /tolia --deploy-url https://deskach.github.io/tolia/",
+    "build": "ng build --prod --aot --base-href=/tolia --deploy-url=tolia/",
     "git-directory-deploy": "git-directory-deploy --directory dist/ --branch gh-pages",
     "deploy": "npm run build && npm run git-directory-deploy",
     "test": "ng test",
