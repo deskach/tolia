@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-  <a class="navbar-brand" href="#">Home</a>
+  <a class="navbar-brand" routerLink="about">About</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse"
           data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
           aria-expanded="false" aria-label="Toggle navigation">
@@ -7,10 +7,18 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Tetris</a>
-      <a class="nav-item nav-link" href="#">9 Start</a>
-      <a class="nav-item nav-link" href="#">Cardmatching</a>
-      <a class="nav-item nav-link" href="#">Match 5</a>
+      <a class="nav-item nav-link" routerLinkActive="active" routerLink="tetris">
+        Tetris
+      </a>
+      <a class="nav-item nav-link" routerLinkActive="active" routerLink="nine-stars">
+        9 Start
+      </a>
+      <a class="nav-item nav-link" routerLinkActive="active" routerLink="cardmatching">
+        Cardmatching
+      </a>
+      <a class="nav-item nav-link" routerLinkActive="active" routerLink="color-lines">
+        Color Lines
+      </a>
     </div>
   </div>
 </nav>
