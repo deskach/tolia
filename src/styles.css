@@ -11,3 +11,7 @@
 .row {
   margin-top: 1rem;
 }
+
+.row a {
+  text-decoration: underline;
+}
