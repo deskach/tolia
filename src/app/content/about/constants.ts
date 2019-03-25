@@ -97,5 +97,5 @@ export const projects: ProjectDescriptor[] = [
   {name: 'Secure', url: "https://secure.pepperstone.com/", imgSrc: "/assets/img/logo-p.png"},
   {name: 'Tetris', url: "http://deskach.github.io/tetris/", imgSrc: "/assets/img/tetris-brick.png"},
   {name: '9 Stars', url: "http://deskach.github.io/nine_stars/", imgSrc: "/assets/img/star.png"},
-  {name: 'Color Lines', url: "https://deskach.github.io/match5/", imgSrc: "/assets/img/match5.jpg"},
+  {name: 'Color Lines', url: "https://deskach.github.io/match5/", imgSrc: "/assets/img/lines.png"},
 ]
