@@ -16,9 +16,13 @@
   text-decoration: underline;
 }
 
+ul.contact-list li img {
+  max-width: 2rem;
+  margin-right: 1rem;
+}
+
 img.work-img {
   max-width: 100px;
-  margin-right: 1rem;
 }
 
 div.progress {
