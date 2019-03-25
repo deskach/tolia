@@ -101,8 +101,8 @@ export const skills: SkillDescriptor[] = [
 ]
 export const services = [
   'HTML / CSS Website Design',
-  'Web Programming (Angular 4, React, Backbone.JS)',
-  'Back-end engineering (Python, Nonde.JS, MySql, MongoDB)',
+  'Web Programming (React, Angular, javascript/typescript)',
+  'Back-end engineering (Python, PHP, Nonde.JS, MySql, MongoDB)',
   'CMS Web-development',
 ]
 export const projects: ProjectDescriptor[] = [
