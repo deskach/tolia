@@ -10,6 +10,11 @@ interface ProjectDescriptor {
   imgSrc: string,
 }
 
+interface SkillDescriptor {
+  title: string,
+  level: number,
+}
+
 function mapKeys(recs: Record<string, any>[], name: string) {
   return recs.reduce((accum, key, idx) => ({
     ...accum,
@@ -84,8 +89,15 @@ const allCourses: CourseDescriptor[] = [
 ]
 
 export const mappedCourses = mapKeys(allCourses, 'year')
-export const skills = [
-  'HTML / CSS', 'JavaScript / Node.JS', 'MySql, MsSql', 'MongoDB', 'ReactJS / Redux', 'Angular 4', 'Python'
+export const skills: SkillDescriptor[] = [
+  {title: 'HTML / CSS', level: 100},
+  {title: 'JavaScript / Node.JS', level: 90},
+  {title: 'Typescript', level: 90},
+  {title: 'MySql, MsSql', level: 80},
+  {title: 'MongoDB', level: 60},
+  {title: 'ReactJS / Redux', level: 90},
+  {title: 'Angular 4', level: 80},
+  {title: 'Python', level: 80}
 ]
 export const services = [
   'HTML / CSS Website Design',
