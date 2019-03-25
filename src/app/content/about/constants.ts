@@ -4,6 +4,12 @@ interface CourseDescriptor {
   url: string,
 }
 
+interface ProjectDescriptor {
+  name: string,
+  url: string,
+  imgSrc: string,
+}
+
 function mapKeys(recs: Record<string, any>[], name: string) {
   return recs.reduce((accum, key, idx) => ({
     ...accum,
@@ -86,4 +92,10 @@ export const services = [
   'Web Programming (Angular 4, React, Backbone.JS)',
   'Back-end engineering (Python, Nonde.JS, MySql, MongoDB)',
   'CMS Web-development',
+]
+export const projects: ProjectDescriptor[] = [
+  {name: 'Secure', url: "https://secure.pepperstone.com/", imgSrc: "/assets/img/logo-p.png"},
+  {name: 'Tetris', url: "http://deskach.github.io/tetris/", imgSrc: "/assets/img/tetris-brick.png"},
+  {name: '9 Stars', url: "http://deskach.github.io/nine_stars/", imgSrc: "/assets/img/star.png"},
+  {name: 'Color Lines', url: "https://deskach.github.io/match5/", imgSrc: "/assets/img/match5.jpg"},
 ]

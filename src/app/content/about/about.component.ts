@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core'
-import {mappedCourses, services, skills} from './constants'
+import {mappedCourses, projects, services, skills} from './constants'
 
 
 @Component({
@@ -13,6 +13,7 @@ export class AboutComponent implements OnInit {
   public years = Object.keys(this.courses).sort().reverse()
   public skills = skills
   public services = services
+  public projects = projects
 
   constructor() {
   }
