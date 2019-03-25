@@ -123,11 +123,11 @@ MIT
 MIT
 MIT
 
-@angular/router@4.4.7
+@angular/common@4.4.7
 MIT
 MIT
 
-@angular/common@4.4.7
+@angular/router@4.4.7
 MIT
 MIT
 
