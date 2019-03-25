@@ -96,7 +96,7 @@ export const skills: SkillDescriptor[] = [
   {title: 'MySql, MsSql', level: 80},
   {title: 'MongoDB', level: 60},
   {title: 'ReactJS / Redux', level: 90},
-  {title: 'Angular 4', level: 80},
+  {title: 'Angular', level: 50},
   {title: 'Python', level: 80}
 ]
 export const services = [

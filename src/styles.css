@@ -30,6 +30,22 @@ div.progress div.progress-bar {
   height: 100%;
 }
 
+div.progress div.progress-bar-10 {
+  width: 10%;
+}
+
+div.progress div.progress-bar-20 {
+  width: 20%;
+}
+
+div.progress div.progress-bar-30 {
+  width: 30%;
+}
+
+div.progress div.progress-bar-40 {
+  width: 40%;
+}
+
 div.progress div.progress-bar-50 {
   width: 50%;
 }
