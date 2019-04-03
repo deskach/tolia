@@ -89,22 +89,27 @@ const allCourses: CourseDescriptor[] = [
 ]
 
 export const mappedCourses = mapKeys(allCourses, 'year')
-export const skills: SkillDescriptor[] = [
-  {title: 'HTML / CSS', level: 100},
-  {title: 'JavaScript / Node.JS', level: 90},
+
+const skillsUnsorted: SkillDescriptor[] = [
+  {title: 'JavaScript / Node.JS', level: 100},
   {title: 'Typescript', level: 90},
-  {title: 'MySql, MsSql', level: 80},
-  {title: 'MongoDB', level: 60},
+  {title: 'HTML / CSS', level: 90},
   {title: 'ReactJS / Redux', level: 90},
+  {title: 'MySql, MsSql', level: 80},
+  {title: 'Python', level: 60},
+  {title: 'MongoDB', level: 60},
+  {title: 'GraphQL', level: 70},
   {title: 'Angular', level: 50},
-  {title: 'Python', level: 80}
 ]
+export const skills = skillsUnsorted.sort((a, b) => b.level - a.level)
+
 export const services = [
   'HTML / CSS Website Design',
   'Web Programming (React, Angular, javascript/typescript)',
   'Back-end engineering (Python, PHP, Nonde.JS, MySql, MongoDB)',
   'CMS Web-development',
 ]
+
 export const projects: ProjectDescriptor[] = [
   {name: 'Secure', url: "https://secure.pepperstone.com/", imgSrc: "/assets/img/logo-p.png"},
   {name: 'Tetris', url: "http://deskach.github.io/tetris/", imgSrc: "/assets/img/tetris-brick.png"},
