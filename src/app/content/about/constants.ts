@@ -86,6 +86,16 @@ const allCourses: CourseDescriptor[] = [
     title: 'Create the REST API in PHP Symfony Complete Class',
     url: 'https://www.udemy.com/certificate/UC-8O2K9G7E/'
   },
+  {
+    year: 2019,
+    title: 'Architecting with Google Cloud Platform Specialization',
+    url: 'https://www.coursera.org/account/accomplishments/specialization/N22RHYD7WYX7'
+  },
+  {
+    year: 2019,
+    title: 'Getting Started with Google Kubernetes Engine',
+    url: 'https://www.coursera.org/account/accomplishments/verify/7JUAVRCJE6NL'
+  },
 ]
 
 export const mappedCourses = mapKeys(allCourses, 'year')
